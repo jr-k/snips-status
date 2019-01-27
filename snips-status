@@ -4,7 +4,7 @@ ORANGE='\033[0;33m'
 NC='\033[0m'
 
 linuxStatusCheck() {
-	X=$(sudo systemctl status $1 | grep -i -E 'Active|●')
+	X=$(sudo systemctl status "$1" | grep -i -E 'Active|●')
 
 	statusIsNext=false
 
